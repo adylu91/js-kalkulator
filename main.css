@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 20px 0;
+  background-color: black;
+}
+
+main {
+  width: 500px;
+  border: 5px solid white;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+main .inputContainer {
+  padding: 0 10px 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .inputContainer .memory {
+  display: block;
+  width: 100%;
+  margin-right: 10px;
+  text-align: right;
+  color: red;
+  font-weight: bold;
+}
+
+main .inputContainer .input {
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+}
+
+main .keysContainer {
+  padding: 20px 20px;
+  border: 5px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .keysContainer .button {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  margin: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .keysContainer .button:hover {
+  background-color: grey;
+}
+
+main .keysContainer .button.buttonClear {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+main .keysContainer .button.disable {
+  pointer-events: none;
+  background-color: darkgrey;
+  color: white;
+}
