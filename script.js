@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   handleSetMemory = () => {
     //ustaw tekst nad wyświetlaczem
     if (state === "" && stateTemp === "" && operation === "") {
-      memory.innerText = "Memory: 0";
+      memory.innerText = "Memory: ...";
     } else {
       let op = "";
       operation === "power" ? (op = "*") : null;
